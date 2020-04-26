@@ -43,6 +43,7 @@
         "imagemin-pngquant": "^8.0.0",
         "imagemin-svgo": "^7.1.0",
         "imagemin-webp": "^5.1.0",
+        "minimatch": "^3.0.4",
         "node-video-lib": "^2.2.0",
         "rimraf": "^3.0.2",
         "sharp": "^0.25.2",
