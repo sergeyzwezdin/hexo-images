@@ -1,48 +1,52 @@
 {
-  "name": "hexo-images",
-  "version": "0.0.3",
-  "description": "Toolset to opimize images for Hexo static site generator",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sergeyzwezdin/hexo-images.git"
-  },
-  "keywords": [
-    "hexo",
-    "filter",
-    "generator",
-    "image",
-    "images",
-    "responsive",
-    "picture"
-  ],
-  "author": "Sergey Zwezdin <sergey@zwezdin.com> (https://zwezdin.com)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sergeyzwezdin/hexo-images/issues"
-  },
-  "homepage": "https://github.com/sergeyzwezdin/hexo-images#readme",
-  "dependencies": {
-    "chalk": "^4.0.0",
-    "handbrake-js": "^5.0.0",
-    "image-size": "^0.8.3",
-    "imagemin": "^7.0.1",
-    "imagemin-advpng": "^5.1.0",
-    "imagemin-guetzli": "^2.0.0",
-    "imagemin-jpeg-recompress": "^6.0.0",
-    "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-optipng": "^7.1.0",
-    "imagemin-pngout": "^4.0.0",
-    "imagemin-pngquant": "^8.0.0",
-    "imagemin-svgo": "^7.1.0",
-    "imagemin-webp": "^5.1.0",
-    "node-video-lib": "^2.2.0",
-    "rimraf": "^3.0.2",
-    "sharp": "^0.25.2",
-    "smartcrop-sharp": "^2.0.3",
-    "svg-dimensions": "^1.0.2"
-  }
+    "name": "hexo-images",
+    "version": "0.0.3",
+    "description": "Toolset to opimize images for Hexo static site generator",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sergeyzwezdin/hexo-images.git"
+    },
+    "files": [
+        "index.js",
+        "lib/"
+    ],
+    "keywords": [
+        "hexo",
+        "filter",
+        "generator",
+        "image",
+        "images",
+        "responsive",
+        "picture"
+    ],
+    "author": "Sergey Zwezdin <sergey@zwezdin.com> (https://zwezdin.com)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sergeyzwezdin/hexo-images/issues"
+    },
+    "homepage": "https://github.com/sergeyzwezdin/hexo-images#readme",
+    "dependencies": {
+        "chalk": "^4.0.0",
+        "handbrake-js": "^5.0.0",
+        "image-size": "^0.8.3",
+        "imagemin": "^7.0.1",
+        "imagemin-advpng": "^5.1.0",
+        "imagemin-guetzli": "^2.0.0",
+        "imagemin-jpeg-recompress": "^6.0.0",
+        "imagemin-mozjpeg": "^8.0.0",
+        "imagemin-optipng": "^7.1.0",
+        "imagemin-pngout": "^4.0.0",
+        "imagemin-pngquant": "^8.0.0",
+        "imagemin-svgo": "^7.1.0",
+        "imagemin-webp": "^5.1.0",
+        "node-video-lib": "^2.2.0",
+        "rimraf": "^3.0.2",
+        "sharp": "^0.25.2",
+        "smartcrop-sharp": "^2.0.3",
+        "svg-dimensions": "^1.0.2"
+    }
 }
