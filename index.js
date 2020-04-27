@@ -3,7 +3,8 @@ hexo.config.images = Object.assign(
         enable: true,
         base_dir: '.images',
         manifestFileName: 'images.json',
-        excludeSourceImages: true
+        excludeSourceImages: true,
+        specialImages: []
     },
     hexo.config.images
 );
