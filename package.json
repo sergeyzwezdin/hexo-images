@@ -29,6 +29,9 @@
         "url": "https://github.com/sergeyzwezdin/hexo-images/issues"
     },
     "homepage": "https://github.com/sergeyzwezdin/hexo-images#readme",
+    "peerDependencies": {
+        "hexo": "^4.2.0"
+    },
     "dependencies": {
         "chalk": "^4.0.0",
         "handbrake-js": "^5.0.0",
