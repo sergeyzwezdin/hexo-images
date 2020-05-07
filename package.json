@@ -32,7 +32,8 @@
     "peerDependencies": {
         "hexo": "^4.2.0",
         "hexo-util": "^1.9.0",
-        "chalk": "^3.0.0"
+        "chalk": "^3.0.0",
+        "pretty-hrtime": "^1.0.3"
     },
     "dependencies": {
         "handbrake-js": "^5.0.0",
@@ -50,7 +51,6 @@
         "imagemin-webp": "^5.1.0",
         "minimatch": "^3.0.4",
         "node-video-lib": "^2.2.0",
-        "pretty-hrtime": "^1.0.3",
         "rimraf": "^3.0.2",
         "sharp": "^0.25.2",
         "smartcrop-sharp": "^2.0.3",
@@ -58,6 +58,7 @@
     },
     "devDependencies": {
         "chalk": "^3.0.0",
-        "hexo-util": "^1.9.0"
+        "hexo-util": "^1.9.0",
+        "pretty-hrtime": "^1.0.3"
     }
 }
