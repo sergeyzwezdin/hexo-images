@@ -1,6 +1,6 @@
 {
     "name": "hexo-images",
-    "version": "0.1.9",
+    "version": "0.1.10",
     "description": "Toolset to opimize images for Hexo static site generator",
     "main": "index.js",
     "scripts": {
