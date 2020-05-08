@@ -194,6 +194,55 @@ Since it's defined, an additional `1.list.jpg` file will be generated. To access
 const imageMetadata = resolve_image(item.list_image, item)
 ```
 
-## Picture tag (and its customization)
+## Picture tag plugin (and its customization)
+
+Picture tag plugin allows you to insert an image in the post without a headache.
+
+```md
+Some text
+
+{% picture 1.jpg %}
+{% endpicture %}
+
+Some other text
+```
+
+It will generate HTML in the output file:
+
+```html
+<figure>
+  <picture>
+    <source srcset="/d5ea4373/1@1x.webp" media="(max-width: 39.99em)" type="image/webp" />
+    <source srcset="/d5ea4373/1@2x.webp" media="(min-width: 40em)" type="image/webp" />
+    <source srcset="/d5ea4373/1@1x.jpg" media="(max-width: 39.99em)" type="image/jpg" />
+    <source srcset="/d5ea4373/1@2x.jpg" media="(min-width: 40em)" type="image/jpg" />
+    <img src="/d5ea4373/1@2x.jpg" />
+  </picture>
+</figure>
+```
+
+Optionally, you can add some caption for the image:
+
+```md
+{% picture 1.jpg %}
+My awesome image
+{% endpicture %}
+```
+
+Which will be transformed into:
+
+```html
+<figure>
+  <picture>
+    <source srcset="/d5ea4373/1@1x.webp" media="(max-width: 39.99em)" type="image/webp" />
+    <source srcset="/d5ea4373/1@2x.webp" media="(min-width: 40em)" type="image/webp" />
+    <source srcset="/d5ea4373/1@1x.jpg" media="(max-width: 39.99em)" type="image/jpg" />
+    <source srcset="/d5ea4373/1@2x.jpg" media="(min-width: 40em)" type="image/jpg" />
+    <img src="/d5ea4373/1@2x.jpg" />
+  </picture>
+  <figcaption>My awesome image</figcaption>
+</figure>
+```
+
 
 ## Tag helpers
