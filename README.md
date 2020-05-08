@@ -115,6 +115,46 @@ images:
 
 ## Manifest
 
+Normally, you shouldn't care about the manifest structure. But if you're curious, the manifest is a JSON file that contains key-value collection of processed files. The key is a relative path to the image. The value is information about the processed file.
+
+Here is an example:
+
+```json
+{
+  "_posts/2014/fronttalks-2014/1.jpg": {
+    "size": 193539,
+    "hash": "d5ea43732c6e51e6d1e0d1666b23ac96",
+    "relatedPath": "_posts/2014/fronttalks-2014.md",
+    "dimensions": {
+      "1x": {
+        "w": 640,
+        "h": 683,
+        "media": "(max-width: 39.99em)"
+      },
+      "2x": {
+        "w": 1024,
+        "h": 683,
+        "media": "(min-width: 40em)"
+      }
+    },
+    "originalType": "jpg",
+    "files": {
+      "webp": {
+        "1x": "d5ea4373/1@1x.webp",
+        "2x": "d5ea4373/1@2x.webp"
+      },
+      "default": "d5ea4373/1@2x.jpg",
+      "jpg": {
+        "1x": "d5ea4373/1@1x.jpg",
+        "2x": "d5ea4373/1@2x.jpg"
+      }
+    }
+  }
+}
+```
+
+In page template you can also access `images` property that will contain the part of the manifest that related to the current page.
+
 ## Prevent resizing
 
 ## Special images
