@@ -74,9 +74,44 @@ $ npm install hexo-images --save-dev
 
 5. Run website building (via `hexo generate` or `hexo server`).
 
-6. Check the output page and ensure that `<picture>` tag is generated 🎉
+6. Ensure that `.images` folder added to your repo. If it's ignored, image processing will start each time, which is time-consuming.
+
+7. Check the output page and ensure that `<picture>` tag is generated 🎉
 
 ## Configuration
+
+To configure the plugin add `images` key to the Hexo config file. For example:
+
+```yaml
+images:
+    enable: true
+    base_dir: ".images"
+    manifestFileName: "images.json"
+    excludeSourceImages: true
+    templates:
+        image: themes/theme1/layout/_tag/image.ejs
+        video: themes/theme1/layout/_tag/video.ejs
+    specialImages:
+        - name: list_image
+          frontmatter: list_image
+          suffix: list
+          width: 590
+          height: 200
+```
+| Key | Required | Default value | Description |
+| --- | --- | --- | --- |
+| `enable` | `false` | `true` | Flag to disable plugin execution. |
+| `base_dir` | `false` | `.images` | Directory name to store image cache. |
+| `manifestFileName` | `false` | `images.json` | File name to store image cache manifest (for more info see below). |
+| `excludeSourceImages` | `false` | `true` | Whether to include initial (uncompressed) image into final output. To include it ensure that [`post_asset_folder`](https://hexo.io/docs/asset-folders.html#Post-Asset-Folder) option is enabled as well. |
+| `templates.image` | `false` |  | Path to the template that will be generated for `{% picture %}` tag helper for all images (for more info see below). |
+| `templates.video` | `false` |  | Path to the template that will be generated for `{% picture %}` tag helper for all videos (for more info see below). |
+| `specialImages` | `false` | `Empty array` | Array of definitions for "special images" (for more info see below). |
+| `specialImages[].name` | `true` |  | Name of special image. |
+| `specialImages[].frontmatter` | `true` |  | Frontmatter key that defines image name for this special image. |
+| `specialImages[].suffix` | `true` |  | Image name suffix that be appened to output file. |
+| `specialImages[].width` | `true` |  | Image width in pixels. |
+| `specialImages[].height` | `true` |  | Image height in pixels. |
 
 ## Manifest
 
