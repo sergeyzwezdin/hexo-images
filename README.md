@@ -6,9 +6,9 @@
 * **Compresses** images to make sure it loads as fast as possible. It uses the most efficient algorithms to compress the image.
 * Creates **responsive images** to display the most important part of the image for mobile users.
 * Creates **special-sized** images if needed. Special sizes for special cases 👌
-* Provides **tag helper** to generate responsive-oriented picture tag.
-* Generates `webp` files in addition to original image type.
-* Converts old good GIFs to to `mp4` and `webm`. 
+* Provides **tag helper** to generate a responsive-oriented picture tag.
+* Generates `webp` files in addition to the original image type.
+* Converts old good GIFs to `mp4` and `webm`. 
 
 ## How it works
 
