@@ -161,4 +161,39 @@ By default, if the image is wider than `640px`, `hexo-images` generates two vers
 
 ## Special images
 
-## Picture tag helper (and its customization)
+Special images work when you need some special size of the image for a particular purpose. For example, if you want to display some small image near to the post on the list, special images could help.
+
+To define special image you need to add `specialImages` key into the Hexo config. This key contains an array of special images, so you can define more than one item.
+
+Example:
+
+```yaml
+images:
+    specialImages:
+        - name: list_image
+          frontmatter: list_image
+          suffix: list
+          width: 590
+          height: 200
+```
+
+In this example we define a special image called `list_image` which is sized as `590px`×`200px`. Now, during the build `hexo-images` will check `list_image` key in the post's frontmatter to determine which file should be processed as a special image. So we need to define it in the post's file:
+
+```md
+---
+title: Test post
+list_image: 1.jpg
+---
+
+Post text
+```
+
+Since it's defined, an additional `1.list.jpg` file will be generated. To access it, you can use `resolve_image` tag helper to access the image (for more info see below):
+
+```js
+const imageMetadata = resolve_image(item.list_image, item)
+```
+
+## Picture tag (and its customization)
+
+## Tag helpers
