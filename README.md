@@ -56,6 +56,26 @@ Some other text
 
 ## Usage
 
+1. Install the plugin using npm:
+```bash
+$ npm install hexo-images --save-dev
+```
+
+2. For every post (or page) create the folder that has the same name as your `.md` file. For instance, for `fronttalks-2014.md` file you need to create `fronttalks-2014/` folder near to `.md` file.
+
+3. Put all required images into the created folder.
+
+4. Reference image from the post by using special `{% picture %}` tag helper. Specify file name without folder like this:
+
+```md
+{% picture 1.jpg %}
+{% endpicture %}
+```
+
+5. Run website building (via `hexo generate` or `hexo server`).
+
+6. Check the output page and ensure that `<picture>` tag is generated 🎉
+
 ## Configuration
 
 ## Manifest
