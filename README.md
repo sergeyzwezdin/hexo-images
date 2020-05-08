@@ -4,7 +4,7 @@
 
 * **Resizes** images up to sizes that are convenient for web browsing size. You don't need to share 36-megapixel photos on the web 🙃
 * **Compresses** images to make sure it loads as fast as possible. It uses the most efficient algorithms to compress the image.
-* Creates **responsive images** to display the most important part of the image for mobile users.
+* Creates **responsive images** to display the most important part of the image for mobile users. While resizing it detects the most important part of the photo to crop (thank you to [`smartcrop-sharp`](https://github.com/jwagner/smartcrop-sharp)).
 * Creates **special-sized** images if needed. Special sizes for special cases 👌
 * Provides **tag helper** to generate a responsive-oriented picture tag.
 * Generates `webp` files in addition to the original image type.
