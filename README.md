@@ -9,7 +9,11 @@
 
 ## How it works
 
+
 ## Requirements
+
+- Hexo: 4.x
+- Node 12+
 
 ## Usage
 
