@@ -14,6 +14,11 @@
 
 1. Near to your `.md` file create folder with the same name as the `.md` file. Copy all required images there.
 
+![Create folder for the images](https://user-images.githubusercontent.com/800755/81404299-9286b600-914e-11ea-9120-6bc2efe0cf9b.png)
+
+
+
+
 ## Requirements
 
 - Hexo: 4.x
