@@ -39,13 +39,13 @@ Some other text
 
 ```html
 <figure>
-    <picture>
-        <source srcset="/2014/fronttalks-2014/d5ea4373/1@1x.webp" media="(max-width: 39.99em)" type="image/webp" />
-        <source srcset="/2014/fronttalks-2014/d5ea4373/1@2x.webp" media="(min-width: 40em)" type="image/webp" />
-        <source srcset="/2014/fronttalks-2014/d5ea4373/1@1x.jpg" media="(max-width: 39.99em)" type="image/jpg" />
-        <source srcset="/2014/fronttalks-2014/d5ea4373/1@2x.jpg" media="(min-width: 40em)" type="image/jpg" />
-        <img src="/2014/fronttalks-2014/d5ea4373/1@2x.jpg" />
-    </picture>
+  <picture>
+    <source srcset="/2014/fronttalks-2014/d5ea4373/1@1x.webp" media="(max-width: 39.99em)" type="image/webp" />
+    <source srcset="/2014/fronttalks-2014/d5ea4373/1@2x.webp" media="(min-width: 40em)" type="image/webp" />
+    <source srcset="/2014/fronttalks-2014/d5ea4373/1@1x.jpg" media="(max-width: 39.99em)" type="image/jpg" />
+    <source srcset="/2014/fronttalks-2014/d5ea4373/1@2x.jpg" media="(min-width: 40em)" type="image/jpg" />
+    <img src="/2014/fronttalks-2014/d5ea4373/1@2x.jpg" />
+  </picture>
 </figure>
 ```
 
