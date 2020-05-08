@@ -266,5 +266,5 @@ You can use [default templates](/lib/templates) as a reference to create your ow
 ```js
 resolve_image(<image name>, <post>)
 ```
-* `<image name>` is a file name of the image that you want to display
+* `<image name>` is a file name of the image that you want to display.
 * `<post>` is an optional parameter to define the post or page which owns the image. It's useful when you try to display the image in the list or on the main page. In this case you should pass the post as a second parameter.
