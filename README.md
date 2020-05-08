@@ -26,7 +26,7 @@
 
 4. The processed files will be included into output build while running `hexo generate` or `hexo server`. To include it into the post use `{% picture %}` tag helper in the following way:
 
-```markdown
+```md
 Some text
 
 {% picture 1.jpg %}
