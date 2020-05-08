@@ -22,6 +22,7 @@
 ![Processed files](https://user-images.githubusercontent.com/800755/81405809-d4652b80-9151-11ea-8586-ca99ba1c242b.png)
 
 4. The processed files will be included into output build while running `hexo generate` or `hexo server`. To include it into the post use `{% picture %}` tag helper in the following way:
+
 ```markdown
 Some text
 
