@@ -35,7 +35,7 @@ Some text
 Some other text
 ```
 
-5. Responsive-oriented `picture` tag will be generated in the final output:
+5. Responsive-oriented `<picture>` tag will be generated in the final output:
 
 ```html
 <figure>
