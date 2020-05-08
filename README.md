@@ -13,7 +13,6 @@
 ## How it works
 
 1. Near to your `.md` file create folder with the same name as the `.md` file. Copy all required images there.
-
 ![Create folder for the images](https://user-images.githubusercontent.com/800755/81406400-ef846b00-9152-11ea-81e0-0c0c2e99ec74.png)
 
 2. Run [`hexo generate`](https://hexo.io/docs/commands#generate) or [`hexo server`](https://hexo.io/docs/commands#server). The images will be processed and cached. Second run will not cause processing this image again. If image changes, the cache will be cleared and the image re-processed. This step could take a time, so be patient 😉
