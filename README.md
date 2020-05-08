@@ -157,6 +157,8 @@ In page template you can also access `images` property that will contain the par
 
 ## Prevent resizing
 
+By default, if the image is wider than `640px`, `hexo-images` generates two versions of the image either for desktop and mobile page. If you don't want to crop the image and skip generating its mobile version, you can add `.noresize.` suffix to the initial file name (e.g. `1.noresize.jpg` instead of `1.jpg`). At the same time you should reference the image by `1.jpg` name via `{% picture %}` tag, not `1.noresize.jpg`.
+
 ## Special images
 
 ## Picture tag helper (and its customization)
