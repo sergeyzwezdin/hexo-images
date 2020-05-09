@@ -113,48 +113,6 @@ images:
 | `specialImages[].width` | `true` |  | Image width in pixels. |
 | `specialImages[].height` | `true` |  | Image height in pixels. |
 
-## Manifest
-
-Normally, you shouldn't care about the manifest structure. But if you're curious, the manifest is a JSON file that contains key-value collection of processed files. The key is a relative path to the image. The value is information about the processed file.
-
-Here is an example:
-
-```json
-{
-  "_posts/2014/fronttalks-2014/1.jpg": {
-    "size": 193539,
-    "hash": "d5ea43732c6e51e6d1e0d1666b23ac96",
-    "relatedPath": "_posts/2014/fronttalks-2014.md",
-    "dimensions": {
-      "1x": {
-        "w": 640,
-        "h": 683,
-        "media": "(max-width: 39.99em)"
-      },
-      "2x": {
-        "w": 1024,
-        "h": 683,
-        "media": "(min-width: 40em)"
-      }
-    },
-    "originalType": "jpg",
-    "files": {
-      "webp": {
-        "1x": "d5ea4373/1@1x.webp",
-        "2x": "d5ea4373/1@2x.webp"
-      },
-      "default": "d5ea4373/1@2x.jpg",
-      "jpg": {
-        "1x": "d5ea4373/1@1x.jpg",
-        "2x": "d5ea4373/1@2x.jpg"
-      }
-    }
-  }
-}
-```
-
-In page template you can also access `images` property that will contain the part of the manifest that related to the current page.
-
 ## Prevent resizing
 
 By default, if the image is wider than `640px`, `hexo-images` generates two versions of the image either for desktop and mobile page. If you don't want to crop the image and skip generating its mobile version, you can add `.noresize.` suffix to the initial file name (e.g. `1.noresize.jpg` instead of `1.jpg`). At the same time you should reference the image by `1.jpg` name via `{% picture %}` tag, not `1.noresize.jpg`.
@@ -268,3 +226,45 @@ resolve_image(<image name>, <post>)
 ```
 * `<image name>` is a file name of the image that you want to display.
 * `<post>` is an optional parameter to define the post or page which owns the image. It's useful when you try to display the image in the list or on the main page. In this case you should pass the post as a second parameter.
+
+## Manifest
+
+Normally, you shouldn't care about the manifest structure. But if you're curious, the manifest is a JSON file that contains key-value collection of processed files. The key is a relative path to the image. The value is information about the processed file.
+
+Here is an example:
+
+```json
+{
+  "_posts/2014/fronttalks-2014/1.jpg": {
+    "size": 193539,
+    "hash": "d5ea43732c6e51e6d1e0d1666b23ac96",
+    "relatedPath": "_posts/2014/fronttalks-2014.md",
+    "dimensions": {
+      "1x": {
+        "w": 640,
+        "h": 683,
+        "media": "(max-width: 39.99em)"
+      },
+      "2x": {
+        "w": 1024,
+        "h": 683,
+        "media": "(min-width: 40em)"
+      }
+    },
+    "originalType": "jpg",
+    "files": {
+      "webp": {
+        "1x": "d5ea4373/1@1x.webp",
+        "2x": "d5ea4373/1@2x.webp"
+      },
+      "default": "d5ea4373/1@2x.jpg",
+      "jpg": {
+        "1x": "d5ea4373/1@1x.jpg",
+        "2x": "d5ea4373/1@2x.jpg"
+      }
+    }
+  }
+}
+```
+
+In page template you can also access `images` property that will contain the part of the manifest that related to the current page.
