@@ -47,7 +47,7 @@
         "imagemin-optipng": "^8.0.0",
         "imagemin-pngout": "^5.0.0",
         "imagemin-pngquant": "^9.0.1",
-        "imagemin-svgo": "^8.0.0",
+        "imagemin-svgo": "^10.0.1",
         "imagemin-webp": "^6.0.0",
         "minimatch": "^3.0.4",
         "node-video-lib": "^2.2.0",
